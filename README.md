@@ -94,5 +94,5 @@ def add_quotes(filename):
             file.write(f'"{line.strip()}",\n')
 
 # Путь к файлу должен быть указан правильно
-add_quotes("D:\\CODE\\PYTHON\\singular.txt")
+add_quotes("words.txt")
 ```

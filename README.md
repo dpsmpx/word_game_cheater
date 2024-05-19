@@ -1,5 +1,5 @@
 # this is the core
-
+```python
 def remove_symbol(word, symbol):
     # Используем срезы для удаления символа из слова
     return word[:word.find(symbol)] + word[word.find(symbol) + 1:]
@@ -78,3 +78,4 @@ elif choice == 1:
     words_from_word()
 
 # конец файла
+```

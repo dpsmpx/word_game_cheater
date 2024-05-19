@@ -77,7 +77,8 @@ if choice == 0:
 elif choice == 1:
     words_from_word()
 
-# конец файла```
+# конец файла
+```
 
 # this is words formatter
 ```python
@@ -93,4 +94,5 @@ def add_quotes(filename):
             file.write(f'"{line.strip()}",\n')
 
 # Путь к файлу должен быть указан правильно
-add_quotes("D:\\CODE\\PYTHON\\singular.txt")```
+add_quotes("D:\\CODE\\PYTHON\\singular.txt")
+```

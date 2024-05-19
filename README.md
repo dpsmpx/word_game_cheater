@@ -77,5 +77,20 @@ if choice == 0:
 elif choice == 1:
     words_from_word()
 
-# конец файла
-```
+# конец файла```
+
+# this is words formatter
+```python
+import os
+
+def add_quotes(filename):
+    with open(filename, 'r', encoding="utf8") as file:
+        lines = file.readlines()
+    
+    with open(filename+"2.txt", 'w', encoding="utf8") as file:
+        for line in lines:
+            # Добавляем двойные кавычки в начало и конец строки, а также запятую после каждой строки
+            file.write(f'"{line.strip()}",\n')
+
+# Путь к файлу должен быть указан правильно
+add_quotes("D:\\CODE\\PYTHON\\singular.txt")```

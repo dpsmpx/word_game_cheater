@@ -6,11 +6,11 @@ def remove_symbol(word, symbol):
 
 
 def match(word, mask, ignoring):
-    if not len(word) == len(mask):
+    if len(word) != len(mask):
         return False
     else:
         for pos in range(len(word)):
-            if not mask[pos] == "*" and not mask[pos] == word[pos] or word[pos] in ignoring:
+            if mask[pos] != "*" and mask[pos] != word[pos] or word[pos] in ignoring:
                 return False
     return True
 
@@ -22,7 +22,7 @@ def contains(g_word, word):
     else:
         # ищем все буквы подставляемого слова в искомом и убираем когда находим, если не нашли совсем - игнор слова
         for pos in range(len(word)):
-            if not word[pos] in g_word:
+            if word[pos] not in g_word:
                 return False
             else:
                 g_word = remove_symbol(g_word, word[pos])
